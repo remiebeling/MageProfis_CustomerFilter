@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <mageprofis translate="label" module="core">
+            <label>Mageprofis</label>
+            <sort_order>100</sort_order>
+        </mageprofis>
+    </tabs>
+    <sections>
+        <customerfilter translate="label" module="core">
+            <label>Customer Filter</label>
+            <tab>mageprofis</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>90</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <hidden_categories translate="label">
+                    <label>Hidden Categories</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <mapping translate="label">
+                            <label>Mapping</label>
+                            <frontend_model>customerfilter/config_mapping</frontend_model>
+                            <comment>Hier die Ids der Kategorien eintragen, die verborgen werden sollen. Ids von Unterkategorien müssen auch angegeben werden. In die Spalte "attribute_code" muss der attributcode eines Ja/Nein Kundenattributes eingetragen werden.</comment>
+                            <backend_model>adminhtml/system_config_backend_serialized_array</backend_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </mapping>
+                        <hidden_price_hint translate="label">
+                            <label>Hinweis bei ausgeblendetem Preis: </label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </hidden_price_hint>
+                    </fields>
+                </hidden_categories>
+            </groups>
+        </customerfilter>
+    </sections>
+</config>

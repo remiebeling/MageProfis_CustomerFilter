@@ -1,0 +1,3 @@
+src/app/code/local/MageProfis/CustomerFilter/                   app/code/local/MageProfis/CustomerFilter/
+src/app/etc/modules/MageProfis_CustomerFilter.xml               app/etc/modules/MageProfis_CustomerFilter.xml
+src/app/locale/de_DE/MageProfis_CustomerFilter.csv              app/locale/de_DE/MageProfis_CustomerFilter.csv
