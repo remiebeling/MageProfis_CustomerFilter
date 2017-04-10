@@ -20,28 +20,4 @@ class MageProfis_CustomerFilter_Helper_Data extends Mage_Core_Helper_Abstract
             return false;
         }
     }
-
-    public function getShowPrice($_product)
-    {
-        if(!$_product->getAttributeText('rc_show_rrp'))
-        {
-            return true;
-        }
-        $options = array(
-            'ja' => true,
-            'yes' => true,
-            'oui' => true,
-            'si' => true,
-        );
-
-        $storeText = strtolower($_product->getAttributeText('rc_show_rrp'));
-
-        if(isset($options[$storeText]))
-        {
-            return $options[$storeText];
-        }
-        else {
-            return false;
-        }
-    }
 }
